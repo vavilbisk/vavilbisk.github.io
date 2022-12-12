@@ -1,47 +1,964 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+<!-- Служебные теги -->
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+  <meta charset="utf-8">
+<!-- Важные для поисковиков метатеги. Замените русский текст на свой -->
+  <title>SWAYSER</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Пример описания вашего сайта 200-300 символов: Шаблон для оттачивания веб-мастерства, который поможет...">  
+  <meta name="keywords" content="шаблон, ключевые, слова, через, запятую">
+<!-- Конец Важные ... -->
+  <!-- Favicon иконка вашего сайта для браузера и результатов поиска -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Шрифт Google - подключен онлайн -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
 
-	<title>name</title>
+  <!-- Bootstrap 4 Фреймворк - основная структура, адаптивность -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Дополнительные CSS файлы Шрифт, Анимация, Иконочный шрифт, Слайдер (карусель) -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Основной стиль сайта. Дополняет, корректирует все предыдущие стили -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
+<!-- Конец служебные теги -->
+
 <body>
-<div class="header">
-  <div class="logo" style="margin-top: -10px;"><h1 class="rainbow" style="font-size: 50px;">SWAYSER</h1> </div>
+<!-- Начало страницы. Отображается в браузере -->
+  
+<!-- Шапка -->
+  <header id="header">
+<!-- topbar соц. иконки -->
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+<!-- Название сайта (текст) или Логотип картинка -->
+      <div class="logo float-left">       
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>SWAYSER</span></a></h1>
+		<!-- Раскомментируйте ниже, если хотите использовать изображение логотипа -->
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="Заполните описание картинки" class="img-fluid"></a> -->
+      </div>
+
+<!-- Меню -->
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Начало</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#services">Сервис</a></li>
+          <li><a href="#portfolio">Фото</a></li>
+          <li><a href="#team">Наша команда</a></li>
+          <li><a href="#footer">Связь</a></li>		  
+          <li class="drop-down"><a href="">Доп. меню</a>
+            <ul>
+              <li><a href="#">Раздел 1</a></li>
+              <li><a href="#">Раздел 2</a></li>
+              <li><a href="#">Раздел 3</a></li>
+              <li><a href="#">Раздел 4</a></li>
+              <li><a href="#">Раздел 5</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>    
+    </div>
+<!-- Конец меню --> 	
+  </header>
+<!-- Конец шапки -->
+
+  <!-- Текст в шапке слева -->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2><span>SWAYSER<br></span>Сотовая компания</h2>
+		  <div class="shap-text pt-5"><span>Мобильный и домашний интернет</span> в любой дом.
+		  <br>Выбери свой тарифный план!</div>
+      <br>
+                <div>
+            <a href="#pricing" class="btn-get-started scrollto">Тарифы</a>
+          </div>
+        </div>
+
+  <!-- Картинка в шапке справа -->
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="img/intro-img.svg" alt="Заполните описание картинки" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--  секция прайса -->
+    <section id="pricing" class="wow fadeInUp section-bg">
+
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Наши тарифы</h3>
+          <p>Описание предоставляемых услуг или цены на товарную продукцию, предоставляемую нашей организацией</p>
+        </header>
+
+        <div class="row flex-items-xs-middle flex-items-xs-center">
+      
+          <!-- услуга 1  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><span class="currency">₽</span>425<span class="period">/месяц</span></h3>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title"> 
+                  Standart
+                </h4>
+                <ul class="list-group">
+                  <li class="list-group-item">200 минут на другие мобильные номера домашнего региона</li>
+                  <li class="list-group-item">10 ГБ мобильного интернета</li>
+                  <li class="list-group-item">50 sms</li>
+                  
+
+
+                </ul>
+                <a href="#" class="btn">Подключить</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- услуга 2  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><span class="currency">₽</span>595<span class="period">/месяц</span></h3>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title"> 
+                  Mix
+                </h4>
+                <ul class="list-group">
+                  <li class="list-group-item">500 минут на другие мобильные номера домашнего региона</li>
+                  <li class="list-group-item">50 ГБ мобильного интернета</li>
+                  <li class="list-group-item">Безлимитный трафик на YouTube</li>
+                  <li class="list-group-item">300 sms</li>
+                </ul>
+                <a href="#" class="btn">Подключить</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- услуга 3  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><span class="currency">₽</span>1095<span class="period">/месяц</span></h3>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title"> 
+                  Premium
+                </h4>
+                <ul class="list-group">
+                  <li class="list-group-item">1200 минут на остальные номера России</li>
+                  <li class="list-group-item">Безлимитный мобильный интернет</li>
+                  <li class="list-group-item">Тысячи фильмов, сериалов и 100 ТВ-каналов от Wink</li>
+                  <li class="list-group-item">Домашний интернет от 100 Мбит/с </li>
+                </ul>
+                <a href="#" class="btn">Подключить</a>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+    </section>
+<!-- конец секция прайса -->
+
+    <!-- Секция о нас -->
+    <section id="about">
+      <div class="container shadow">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img p-2 shadow">
+              <img src="img/about-img.jpg" alt="Заполните описание картинки">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>О шаблоне</h2>
+              <h3>Внутри кода шаблона присутствуют подробные комментарии <strong>на русском языке</strong></h3>
+              <p>Важные фрагменты, секции и блоки кода обёрнуты комментариями с указанием их предназначения</p>
+			  <p>Это на много упростит работу по редактированию шаблона. </p>
+              <p>Для соблюдения пропорционального размещения блоков и картинок между собой, старайтесь соблюдать количество символов в тексте и размеры изображений. Исходный объём текста перед вами на лицо. <br>Размеры соответствующих картинок можете посмотреть в папке img.</p>
+              <ul>
+           <li><i class="ion-android-checkmark-circle"></i> Шаблон полностью адаптивный благодаря последней версии (2019 г.) фреймворка Bootstrap v4.3.1</li>
+           <li><i class="ion-android-checkmark-circle"></i> На картинках указаны исходные размеры, которые желательно соблюдать при замене на свои изображения.</li>
+           <li><i class="ion-android-checkmark-circle"></i> Исходный код разбит на секции и блоки, которые сопровождаются комментариями. Их можно менять местами, добавлять, удалять.</li>
+              </ul>
+            </div>
+          </div>
+		  
+        </div>
+      </div>
+    </section>
+	<!-- Конец Секция о нас -->
+
+
+    <!-- Секция сервис -->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Сервис Услуги</h3>
+          <p>Здесь вы можете разместить короткое описание своих услуг или товара.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-android-checkbox-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Товар 1</a></h4>
+              <p class="description">Разместите описание товара или услуги. Можно добавить ссылку на дополнительную страницу</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Услуга 1</a></h4>
+              <p class="description">Файл иконок размещён по адресу lib/ionicons/css/ionicons.css в этом дистрибутиве</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Товар 2</a></h4>
+              <p class="description">В файле ionicons.css наименования сотен иконок. Их имена такие: ion-ios-calculator-outline</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-calculator-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Услуга 2</a></h4>
+              <p class="description">Замените иконки на свои, меняя только их названия без расширений, пример ion-ios-calculator-outline</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Товар 3</a></h4>
+              <p class="description">Вы легко замените цвет размещаемой иконки на свой, изменив его строкой выше, здесь код цвета #2282ff</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Услуга 3</a></h4>
+              <p class="description">Смотреть образцы примеров на сайте https://ionicons.com/ - иконки с открытым исходным кодом</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+	<!-- Конец Секция сервис -->
+
+    <!-- Секция Why -->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container-fluid">
+        
+        <header class="section-header">
+          <h3>Что включено в шаблон? Секция Whu</h3>
+          <p>Основные функции, благодаря которым шаблон выглядит живым</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="why-us-img">
+              <img src="img/why-us.jpg" alt="Заполните описание картинки" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="why-us-content">
+              <p>Шаблон полностью адаптивен к просмотру на мобильных устройствах с любым размером экрана. </p>
+              <p> Используется последняя версия (2019 г.) фреймворка Bootstrap v4.3.1. </p>
+
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-diamond" style="color: #f058dc;"></i>
+                <h4>Анимация блоков</h4>
+                <p>В процессе прокрутки страницы вы наблюдаете эффекты появления блоков и выползания текстов.</p>
+              </div>
+
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-object-group" style="color: #ffb774;"></i>
+                <h4>Галерея фотографий</h4>
+                <p>В верней части галереи расположено меню, используя которое вы сортируете показ фотографий соответствующих выбранному пункту.</p>
+              </div>
+              
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-language" style="color: #589af1;"></i>
+                <h4>Блок прогресс бар</h4>
+                <p>Под этими строками вы видите числа, которые начинают нарастать в значении при их появлении при прокрутке. Перезагрузите страницу F5 и просмотрите ещё раз.</p>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="row counters shadow mt-4">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">261</span>
+            <p>Клиентов</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">437</span>
+            <p>Проектов</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">24</span>
+            <p>Часы поддержки</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>Работников</p>
+          </div>
+  
+        </div>
+
+      </div>
+    </section>
+    <!-- конец секция Why -->
+    <!-- Секция Call To Action -->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Секция Call ВНИМАНИЕ!</h3>
+            <p class="cta-text">  В кодах CSS и JS файлов тоже имеются комментарии на русском языке. Они помогут бустрее разобраться в структуре предложенного шаблона. Основные файлы лежат по адресам js/main.js и css/style.css</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Ссылка не активна</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- конец секция Call To Action -->
+    <!-- Секция Features -->
+    <section id="features">
+      <div class="container">
+
+        <div class="row feature-item">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="img/features-1.svg" class="img-fluid" alt="Заполните описание картинки">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4>Рядом с этим текстом картинки современного веб-формата изображений .svg, они меньше тормозят загрузку страницы в браузере.</h4>
+            <p>
+              SVG – Scalable Vector Graphics (Масштабируемая Векторная Графика) – основанный на векторе формат для веб-разработчиков. Данный тип формата стал столь популярен благодаря тому, что его изображения возможно отображать на больших разрешениях без потери качества, так как SVG – это векторный формат.
+            </p>
+            <p>
+              SVG имеет небольшой вес по сравнению с другими форматами. У этого формата просто невероятные возможности. Флаги, символы, элементы интерфейса. И это только небольшой список того, как его можно использовать. 
+            </p>
+          </div>
+        </div>
+
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="img/features-2.svg" class="img-fluid" alt="Заполните описание картинки">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h4>Рядом с этим текстом картинки современного веб-формата изображений .svg, они меньше тормозят загрузку страницы в браузере.</h4>
+            <p>
+             Толчок развития данной языковой разметке впервые был дан Консорциумом Всемирной паутины (World Wide Web Consortium), который был более известен в 1999 году как W3C. W3C дала понятие SVG – языковая разметка для создания двухмерных графических интерфейсов и изображений. 
+            </p>
+            <p>
+              Самый большой плюс его использования, это то что он является векторным форматом, то есть его возможно использовать на любых дисплеях – каким бы ни было их разрешение, он везде будет отображаться одинаково.
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    <!-- конец секция Features -->
+    <!-- Секция Portfolio -->
+    <section id="portfolio" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Секция Portfolio</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Все</li>
+              <li data-filter=".filter-app">Выбор 1</li>
+              <li data-filter=".filter-card">Выбор 2</li>
+              <li data-filter=".filter-web">Выбор 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/app1.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 1 из Выбор 1</a></h4>
+                <p>Выбор 1</p>
+                <div>
+                  <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/web3.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 1 из выбор 3</a></h4>
+                <p>Выбор 3</p>
+                <div>
+                  <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/app2.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 2 из Выбор 1</a></h4>
+                <p>Выбор 1</p>
+                <div>
+                  <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/card2.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 1 из Выбор 2</a></h4>
+                <p>Выбор 2</p>
+                <div>
+                  <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/web2.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 2 из выбор 3</a></h4>
+                <p>Выбор 3</p>
+                <div>
+                  <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/app3.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 3 из выбор 1</a></h4>
+                <p>Выбор 1</p>
+                <div>
+                  <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/card1.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 2 из выбор 2</a></h4>
+                <p>Выбор 2</p>
+                <div>
+                  <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/card3.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 3 из Выбор 3</a></h4>
+                <p>Выбор 2</p>
+                <div>
+                  <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/web1.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="portfolio-info">
+                <h4><a href="#">Картинка 3 из выбор 3</a></h4>
+                <p>Выбор 3</p>
+                <div>
+                  <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+	<!-- Конец portfolio -->
+
+    <!-- Секция Clients -->
+    <section id="testimonials">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Секция. Слайдер комментариев</h3>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <div class="owl-carousel testimonials-carousel wow fadeInUp">
+    
+              <div class="testimonial-item">
+                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="Заполните описание картинки">
+                <h3>Вася Петров</h3>
+                <h4>Основатель &amp; Владелец</h4>
+                <p>
+                  Ссылки и ссылочная масса в целом играют основную роль в продвижении сайта. Удачно перелинкованные внутренние ссылки и рост количества внешних ссылок на ваш проект, придадут вашему сайту значимый вес в ранжировании поисковыми системами.
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="Заполните описание картинки">
+                <h3>Ира Ленина</h3>
+                <h4>Дизайнер</h4>
+                <p>
+                  При редактировании шаблонов Вам не придется проставлять теги ссылок, ссылки в HTML коде уже проставлены, необходимо поменять в них только адреса и при необходимости названия папок или изображений.
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="Заполните описание картинки">
+                <h3>Лена Иринова</h3>
+                <h4>Директор</h4>
+                <p>
+                  Внешняя ссылка отправит Вас на страницы стороннего сайта. Внутренняя ссылка, является переходом по страницам текущего сайта или перемещением к месту на на этой же странице..
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="Заполните описание картинки">
+                <h3>Петр Васин</h3>
+                <h4>Фрилансер</h4>
+                <p>
+				Ссылкой (гиперссылка) в HTML документе является та часть текста или картинка, которая выделяется (не всегда), при наведении на нее мыши. Если курсор мыши поменял вид, то Вы попали на ссылку.                 
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+	<!-- конец секция Clients -->
+
+    <!-- Секция Team -->
+    <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3>Секция Team Команда</h3>
+          <p>Изображения ниже складываются при уменьшении экрана и увеличиваются в размере для охвата всей площади экрана</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="img/team-1.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Николай Андреев</h4>
+                  <span>главный управляющий</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/team-3.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Андрей Николаев</h4>
+                  <span>Сеошник</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="img/team-2.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Валентина Ольгина</h4>
+                  <span>менеджер</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="img/team-4.jpg" class="img-fluid" alt="Заполните описание картинки">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Ольга Валентинова</h4>
+                  <span>Бухгалтер</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+	<!-- Конец team -->
+
+    <!-- секция клиенты -->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Наши клиенты (слайдер)</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="Заполните описание картинки">
+          <img src="img/clients/client-2.png" alt="Заполните описание картинки">
+          <img src="img/clients/client-3.png" alt="Заполните описание картинки">
+          <img src="img/clients/client-4.png" alt="Заполните описание картинки">
+          <img src="img/clients/client-5.png" alt="Заполните описание картинки">
+          <img src="img/clients/client-6.png" alt="Заполните описание картинки">
+          <img src="img/clients/client-7.png" alt="Заполните описание картинки">
+          <img src="img/clients/client-8.png" alt="Заполните описание картинки">
+        </div>
+
+      </div>
+    </section>
+	<!-- конец клиенты -->
+
+
+
+
+<!-- секция вопрос ответ -->
+    <section id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h3>Секция вопрос ответ</h3>
+          <p>Нажав на вопрос вы получите полноценный ответ на интересующую вас информацию</p>
+        </header>
+
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">Как загрузить файлы сайта на хостинг? <i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>
+                Для загрузки не большого количества файлов можно обойтись администраторским разделом хостинга. Заходим в клиентскую часть Вашего аккаунта, находим "Файловый менеджер", в котором должна лежать папка с названием Вашего сайта
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Как загрузить файлы по FTP? <i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                При загрузке на хостинг большого количества папок и файлов с емким содержимым (видео, музыка), используются специальные программы FTP клиента. Самый простой - Total Commander, хороший бесплатный - FileZilla Client, хороший платный - CuteFTP
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Как настроить соединение по FTP для клиента CuteFTP? <i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                Адрес хоста (FTP Host Address): личный домен, например: sitey.ru<br>
+Имя узла (Label for site): Любое имя для себя, потом будете на него нажимать для подключения<br>
+Имя пользователя (FTP site User Name): логин на хосте (или смотрите тех. данные хоста)<br>
+Пароль (FTP site Password): ваш пароль (пароль можно настроить в Вашей админ. части хоста)
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Что такое индексный файл index.html? <i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                В любой папке необходимо наличие файла index.html (index.php, index.cgi...). Обычно этот файл является главной страницей сайта или раздела.
+Каждый современный браузер настроен на открытие этого файла по умолчанию. Если в папке лежит файл index.html, то браузер откроет его без соответствующего набора.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Для чего нужен файл style.css? <i class="ion-android-remove"></i></a>
+            <div id="faq5" class="collapse" data-parent="#faq-list">
+              <p>
+                Сайт построенный с применением технологии CSS (каскадные таблицы стилей) имеет много преимуществ и обеспечивает быстроту открытия, переходов по страницам сайта. Это достигается за счет того, что любой браузер при открытии сайта в первую очередь ищет на нем и считывает информацию из файла style.css. Название может быть любым, но расширение .css обязательно.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Дополнительно о файле style.css <i class="ion-android-remove"></i></a>
+            <div id="faq6" class="collapse" data-parent="#faq-list">
+              <p>
+                Файл style.css дает понять браузеру из чего состоит сайт, его размерность, где лежат картинки, какой шрифт, цвет, фон... разных страниц и разделов. Браузер записывает эту информацию к себе в кеш (временная память) и при продолжении работы с этим сайтом он повторно не обращается к серверу (провайдеру), на котором лежит Ваш сайт (папки, файлы)..
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+<!-- конец секция вопрос ответ -->
+
+  </main>
+
+<!--  Footer -->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                  <div class="footer-info">
+                    <h3>Подвал Footer</h3>
+                    <p>Вы создали сайт своими руками без специальных знаний в веб-программировании.</p><br>
+					<p>Не обязательно писать код самому, достаточно понимать его и править под свои нужды.</p>
+                  </div>
+
+                  <div class="footer-newsletter">
+                    <h4>Подписка</h4>
+                    <p>Для получения свежих новостей, Вы можете оставить свой email адрес в форме ниже</p>
+                    <form action="" method="post">
+<input type="email" name="Подписка:" required><input type="submit"  value="Отправить">
+                    </form>
+                  </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Полезные ссылки</h4>
+                    <ul>
+                      <li><a href="#">Ссылка не подключена 1</a></li>
+                      <li><a href="#">Ссылка не подключена 2</a></li>
+                      <li><a href="#">Ссылка не подключена 3</a></li>
+                      <li><a href="#">Ссылка не подключена 4</a></li>
+                      <li><a href="#">Ссылка не подключена 5</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-links">
+                    <h4>Наши контакты</h4>
+                    <p>
+                      Россия<br>
+                      Город, Индекс 101000<br>
+                      Ул. Русская д.101<br>
+                      Телефон: +7 558 554 -- --<br>
+                      Email: info@example.com<br>
+                    </p>
+                  </div>
+
+                  <div class="social-links">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="form">
+              
+              <h4>Обратная связь - требует дополнительных настроек</h4>
+              <p>Мы ответим на интересующие вас вопросы в течении рабочего дня.</p>
+              <form action="" method="post" role="form" class="contactForm">
+				  
+                <div class="form-group">
+<input type="text" name="Имя:" class="form-control" placeholder="Ваше Имя" required>
+                  <div class="validation"></div>
+                </div>
+				
+                <div class="form-group">
+<input type="email" class="form-control" name="E-mail:" placeholder="Ваш Email" required>
+                  <div class="validation"></div>
+                </div>
+				
+                <div class="form-group">
+<input type="text" class="form-control" name="Тема:" placeholder="Тема" required>
+                  <div class="validation"></div>
+                </div>
+				
+                <div class="form-group">
+<textarea class="form-control" name="Сообщение:" rows="5" placeholder="Текст сообщения"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+<div class="form-group">
+<input type="text" class="form-control" name="Телефон:" placeholder="При желании Ваш телефон в любом формате">
 </div>
 
-<div class="ad">
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/274px-Rotating_earth_%28large%29.gif" width="540" height="100px">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/274px-Rotating_earth_%28large%29.gif" width="540" height="100px">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/274px-Rotating_earth_%28large%29.gif" width="540" height="100px">
+                <div id="sendmessage">Ваше сообщение уже отправлено. Спасибо!</div>
+                <div id="errormessage"></div>
+
+                <div class="text-center"><button type="submit" title="Send Message">Отправить</button></div>
+              </form>	  
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Ваш сайт</strong>. Права под защитой
+      </div>
+      <div class="credits">
+        Тренировочный сайт <a href="#">Домен</a>
+      </div>
+    </div>
+  </footer>
+<!-- Конец Footer -->
+
+<!-- Стрелка вверх -->
+<div class="mob-sm-none">
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </div>
+<!-- Конец стрелка вверх -->
 
+<!-- Раскомментируйте ниже если хотите использовать предварительный загрузчик "вращающееся колёсико" перед появлением основного контента -->
+  <!-- <div id="preloader"></div> -->
 
-
-
-
-<!---POST--->
-<div class="post"> 
-<!---Название поста---><div><h2>Запустились!</h2></div>
-<!---Текст поста---><h3 class="text">Текст поста <a href="https://yandex.ru" class="bl" target="_blanck">yandex</a> Текст поста Текст поста Текст поста Текст поста Текст поста Текст поста Текст поста Текст поста Текст поста</h3>
-<!---Изображение поста---><img class="displayed" src="https://krot.info/uploads/posts/2021-02/thumbs/1614143261_28-p-fon-anonimus-30.jpg">
-<hr style="border: 2px solid;  border-color: rgb(72, 72, 72);">
-<!---Номер поста---><small>Post #1 </small>
-<!---Дата публикации поста---><h5>Дата публикации: 09.12.2022</h5>
-</div>
-<!---POST END--->
-
-
-
-
-
-
-
+  <!-- Подключение JS скриптов -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  
+  <!-- Основной JS скрипт -->
+  <script src="js/main.js"></script>
 </body>
 </html>
