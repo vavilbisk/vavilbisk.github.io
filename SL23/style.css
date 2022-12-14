@@ -40,6 +40,7 @@ body {
     color: #333;
     font-size: 14px;
     line-height: 24px;
+    background-image: url(img/bg.jpg);
 }
 .group-title {
     border: 1px solid #ddd;
@@ -461,6 +462,13 @@ ul.ht-dropdown.dropdown-style-two li {
 }
 .header-bottom.header-sticky {
     border-bottom: 1px solid #ddd;
+    background-image: url(img/head.png);
+    background-repeat: no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+
 }
 .homepage .header-bottom.header-sticky {
     border-bottom: none;
@@ -1074,6 +1082,7 @@ ul.ht-dropdown.dropdown-style-two li {
 }
 .product-area .single-product{
     margin-bottom: 30px;
+
 }
 .single-product:hover{
     border: 1px solid #ddd;
@@ -3995,4 +4004,23 @@ legend {
 
 .mobile-menu nav ul{
     display: none;
+}
+
+
+
+.button_1671009841109 {
+    display: inline-block !important;
+    text-decoration: blink;
+    background-color: #f1ac06 !important;
+    color: white !important;
+    border: 0px solid #006089 !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    padding: 7px 23px !important;  !important;
+}
+.button_1671009841109:hover{
+    text-decoration: none !important; 
+    background-color: #f1ac06 !important;
+    color: #ff6a72 !important;
+    border-color: #006089 !important;
 }
