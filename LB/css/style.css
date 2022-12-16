@@ -1394,3 +1394,22 @@ h1.big,
         left: 50% !important;
         margin-left: -150px !important;
 }
+
+
+.button_1671141284468 {
+    display: inline-block !important;
+    text-decoration: none !important;
+    background-color: #ffd740 !important;
+    color: #000000 !important;
+    border: 0px solid #ffffff !important;
+    border-radius: 1px !important;
+    font-size: 15px !important;
+    padding: 5px 10px !important; 
+    transition: all 0.8s ease !important;
+}
+.button_1671141284468:hover{
+    text-decoration: none !important; 
+    background-color: #30b8f6 !important;
+    color: #ffffff !important;
+    border-color: #006089 !important;
+}
