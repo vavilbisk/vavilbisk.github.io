@@ -526,7 +526,7 @@ h6 {
 #about .about-img img {
   width: 100%;
   border: 8px solid #fff;
-  transition: .5s;
+
 }
 
 #about .about-img img:hover {
@@ -535,29 +535,8 @@ h6 {
   transform: scale(1.03);
 }
 
-#about .about-img::before {
-  position: absolute;
-  left: -31px;
-  top: -30px;
-  width: 90%;
-  height: 92%;
-  z-index: -1;
-  content: '';
-  background-color: #ebf1fa;
-  transition: .5s;
-}
 
-#about .about-img::after {
-  position: absolute;
-  right: -31px;
-  bottom: -30px;
-  width: 90%;
-  height: 92%;
-  z-index: -1;
-  content: '';
-  background-color: #ebf1fa;
-  transition: .5s;
-}
+
 
 /* Секция сервис
 --------------------------------*/
@@ -1540,4 +1519,22 @@ h6 {
 
 @media only screen and (max-width: 576px){
 .mob-sm-none { display: none;}
+}
+
+.button_1671395370055 {
+    display: inline-block !important;
+    text-decoration: none !important;
+    background-color: #1bb1dc !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    border-radius: 7px !important;
+    font-size: 18px !important;
+    padding: 10px 15px !important; 
+    transition: all 0.8s ease !important;
+}
+.button_1671395370055:hover{
+    text-decoration: none !important; 
+    background-color: #0693bb !important;
+    color: #ffeded !important;
+    border-color: #ffffff !important;
 }

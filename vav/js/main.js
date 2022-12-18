@@ -111,7 +111,7 @@
     });
   });
 
-  // Слайдер
+  // Слайдер Наша команда
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -119,7 +119,7 @@
     items: 1
   });
 
-  // Слайдер 2
+  // Слайдер Наши клиенты
   $(".clients-carousel").owlCarousel({
     autoplay: true,
     dots: true,
