@@ -17,9 +17,9 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 100%;
+  width: 102%;
   height: 100%;
-  margin-left: -0.5%;
+  margin-left: -2%;
 }
 
 /* Style the button used to pause/play the video */
@@ -28,7 +28,7 @@
   font-size: 18px;
   padding: 10px;
   border: none;
-  
+
 
 
 
@@ -66,12 +66,14 @@ margin-left: -10p;
 }
 
 #intro790 {
-  position: fixed;
+  position: absolute;
+  background-attachment: ;
+  background-size: auto;
   bottom: 0;
   background: no-repeat url("https://i.postimg.cc/BQ2ggPDs/3.png") ;
-  background-size: 100% 100%;
+
   color: black;
-  width: 100%;
+  width: 102%;
   height: 100%;
   text-align: center;
 }
